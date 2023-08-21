@@ -8,7 +8,7 @@
         width: 100%;
         overflow: hidden;
         height: 80rem;
-        background-color: aquamarine;
+        /* background-color: aquamarine; */
     }
 
     .costomer-review{
@@ -33,7 +33,7 @@
         width: 100%;
         /* overflow: hidden; */
         height: 80rem;
-        background-color: bisque;
+        /* background-color: bisque; */
        
     }
     .our-team{
