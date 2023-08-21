@@ -1,0 +1,50 @@
+@media screen and (max-width:600px) {
+    .gallery-part{
+        width: 100%;
+        overflow: hidden;
+        height: inherit;
+    }
+    .customer-info{
+        width: 100%;
+        overflow: hidden;
+        height: 80rem;
+        background-color: aquamarine;
+    }
+
+    .costomer-review{
+        display: grid;
+        grid-template-columns: 220px 200px;
+        gap: 1rem;
+        margin-top: 12rem;
+    }
+    .costomer{
+        width: 43vw;
+        height: 33rem;
+        overflow: hidden;
+    }
+
+    .customer-info h1{
+
+        font-size: 2.5rem;
+    }
+ 
+
+    .Team-Part{
+        width: 100%;
+        /* overflow: hidden; */
+        height: 80rem;
+        background-color: bisque;
+       
+    }
+    .our-team{
+        display: grid;
+        grid-template-columns: 330px;
+        place-content: center;
+        gap: 4rem;
+    
+    }
+
+    .memeber{
+        width: 50vw;
+    }
+}

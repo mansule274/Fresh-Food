@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    gap: 0;
+}
+
+
+.gallery-part{
+    text-align: center ;
+    min-width:100%;
+    height: 45rem;
+    margin-bottom: 5rem;
+    padding-left: 10px;
+}
+.gallery-part h1{
+    padding: 2rem;
+    font-size: 4rem;
+}
+
+.gallery-part span{
+    color: gold;
+    font-family: 'Barriecito', cursive;
+    border-bottom: 5px solid gold;
+}
+
+
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1.5rem;
+    /* place-content: center; */
+}
+
+.img-grid{
+    position: relative;
+    overflow: hidden;
+}
+
+.img-grid img{
+    display: block;
+    width: 100%;
+    /* aspect-ratio: 1/1; */
+    object-fit: cover;
+    object-position: center;
+}
+
+.img-grid > .content{
+    position: absolute;
+    inset: 0;
+    font-size: 1.2rem;
+    padding: 20px;
+    background-color:rgb(0.99, 0.99, 0.99, .5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.img-grid > .btn{
+    position: absolute;
+    inset: 0;
+    top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-grid .btn button{
+    padding: 10px;
+    font-weight: 200;
+    background-color: yellow;
+    border: none;
+    border-radius: 20px;
+    color: #000;
+}
+
+.img-grid .content{
+    opacity: 0;
+    
+}
+
+.img-grid:hover .content{
+    opacity: 1;
+    transition: 1s;
+    
+}
+
+.img-grid img {
+    transform: scale(1);
+}
+
+.img-grid:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.img-grid .btn {
+    transform: translateY(100%);
+}
+
+.img-grid:hover .btn{
+    transform: translateY(0);
+    transition: 1s;
+}
+
+
+h1 span{
+    color: gold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    gap: 0;
+    
+}
+
+.rating img{
+    width: 10%;
+    height: 4vh;
+    
+}
+.customer-info{
+    width: 100%;
+    height: 25rem;
+    text-align: center;
+    margin-bottom: 20rem;
+}
+
+.customer-info h1{
+    font-size: 4rem;
+}
+
+.customer-info  span{
+    color: gold;
+    font-family: 'Barriecito', cursive;
+    border-bottom: 5px solid gold;
+}
+
+.costomer-review{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px ;
+    place-content: center;
+    /* position: relative; */
+
+    
+}
+
+.costomer{
+    width: 20vw;
+    height: 70vh;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 3px #000;
+    padding: 10px;
+}
+
+.custom-img img{
+    width: 80%;
+    border-radius: 200px;
+    border: 7px solid rgb(234, 229, 229);
+    /* position: relative;
+    top: -3rem;
+     */
+}
+
+.custom-img img{
+    transform: translateY(0);
+}
+
+.custom-img:hover img{
+    transform: translateY(-15%);
+    transition: 0.1s;
+}
+
+.brand  i{
+    transform: scale(0);
+}
+
+.brand:hover i {
+
+    transition: 0.1s;
+    transform: scale(1.1);
+}
+
+
+
+.rating i {
+    color: gold;
+}
+
+
+
+.Team-Part{
+    width: 100%;
+    height: 35rem;
+    /* margin: auto; */
+}
+
+.Team-Part h1{
+    text-align: center;
+    padding: 20px;
+    font-size: 4rem;
+}
+
+.Team-Part span{
+    color: gold;
+    font-family: 'Barriecito', cursive;
+    border-bottom: 5px solid gold;
+}
+
+.our-team{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    place-content: center;
+}
+.memeber{
+    width: 20vw;
+    height: 48vh;
+    box-shadow: 0 0 5px #000;
+    margin: auto;
+    border-radius: 900px;
+    text-align: center;
+}
+
+
+.memeber img{
+    width: 100%;
+    height: 40vh;
+    margin-top: 1.5rem;
+    border-radius:200px ;
+    box-shadow: 1px 1px 2px #000;
+}
+.memeber h2{
+    color: gold;
+    margin-top: 10px;
+}
+
+.memeber p{
+    width: 50%;
+    margin-left: 4.3rem;
+    margin-bottom: 7px;
+}
+
+/* ::-webkit-scrollbar{
+    background-color: white;
+    color: gold;
+} */
+
+/* .content{
+    transform: scale(0);
+}
+
+.content:hover{
+    transform: scale(1.1);
+} */
+.memeber:hover {
+    height: 60vh;
+    border-radius: 20px;
+}
+
+.memeber:hover img{
+    margin-top: 0;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.memeber p{
+    transform: scale(0);
+}
+
+.memeber:hover p{
+    transform: scale(1.1);
+    z-index: 2px;
+}
+
+.memeber h2{
+    transform: scale(0);
+}
+
+.memeber:hover h2{
+    transform: scale(1.1);
+    z-index: 2px;
+}
+
+.memeber i{
+    transform: scale(0);
+}
+
+.memeber:hover i{
+    transform: scale(1.1);
+    z-index: 2px;
+}
