@@ -1,0 +1,66 @@
+@media only screen and (max-width:600px) {
+    body {
+        max-width: 100vw;
+       min-height: 100vh;
+        background-image: url(./pics/bg2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* overflow-x: hidden; */
+     }
+
+    header {
+        width: 100%;
+        height: 15vh;
+    }
+
+    ul{
+        display: inline-block;
+    }
+
+    .solids {
+        font-size: 10px;
+    }
+
+    .first {
+        width: 100%;
+        height: 100%;
+     }
+
+    .easy-food{
+        flex-direction: column;
+    }
+
+    .food-pic img { 
+        width: 400px;
+        height: 400px;
+        /* overflow: hidden;  */
+    
+     }
+     .food-pic {
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+     
+
+    
+     }
+
+    .last {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        
+    }
+
+    .order-now h1 {
+        font-size: 3rem;
+
+    }
+
+    .forms {
+        flex-direction: column;
+        height: 90%;
+    }
+}
